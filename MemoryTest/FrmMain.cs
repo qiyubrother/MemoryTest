@@ -33,12 +33,11 @@ namespace MemoryTest
         private void btnBegin_Click(object sender, EventArgs e)
         {
             btnBegin.Visible = false;
-
             while (true)
             {
                 try
                 {
-                    var arr = new int[102400];
+                    var arr = new int[102400]; /* 400K */
                     for (var i = 0; i < arr.Length; i++)
                     {
                         arr[i] = i * 2;
@@ -52,7 +51,6 @@ namespace MemoryTest
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-
                     txtMemoryAllowed.Text = FormatSize(p.PrivateMemorySize64);
                     txtAllowVirtualMemorySize64.Text = FormatSize(p.VirtualMemorySize64);
                     break;
