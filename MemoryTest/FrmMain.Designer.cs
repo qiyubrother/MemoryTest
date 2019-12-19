@@ -35,6 +35,7 @@
             this.txtAllowVirtualMemorySize64 = new System.Windows.Forms.TextBox();
             this.btnBegin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +77,7 @@
             this.btnBegin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBegin.Location = new System.Drawing.Point(273, 12);
             this.btnBegin.Name = "btnBegin";
-            this.btnBegin.Size = new System.Drawing.Size(107, 48);
+            this.btnBegin.Size = new System.Drawing.Size(120, 21);
             this.btnBegin.TabIndex = 0;
             this.btnBegin.Text = "开始测试";
             this.btnBegin.UseVisualStyleBackColor = true;
@@ -92,11 +93,23 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label3.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.label3.Location = new System.Drawing.Point(274, 40);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 19);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Any CPU | 首选32位";
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 74);
+            this.ClientSize = new System.Drawing.Size(407, 74);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtAllowVirtualMemorySize64);
@@ -123,6 +136,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtAllowVirtualMemorySize64;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
 

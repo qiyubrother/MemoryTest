@@ -12,6 +12,8 @@ using System.Windows.Forms;
 
 namespace MemoryTest
 {
+    // Any CPU | 首选32位
+    // x86
     public partial class FrmMain : Form
     {
         Process p = null;
